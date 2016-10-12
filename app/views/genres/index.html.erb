@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Genres</title>
+  </head>
+  <body>
+    <ul>
+      <% Genre.all.each do |genre| %>
+      <li><a href="/genres/<%= genre.name %>.html">
+        <%= genre.name %>
+        </a></li>"
+      <% end %>
+    </ul>
+  </body>
+</html>

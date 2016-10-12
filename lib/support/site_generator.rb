@@ -12,7 +12,7 @@ class SiteGenerator
   def render(erb_file)
     template = File.read("./app/views/#{erb_file}")
     result = ERB.new(template).result(binding)
-    file = File.new("#{rendered_path}/#{erb_file.split(".erb").first}")
+    file = File.new("#{rendered_path}/#{erb_file.split(".erb").first}", "w+")
     file.write(result)
   end
 
