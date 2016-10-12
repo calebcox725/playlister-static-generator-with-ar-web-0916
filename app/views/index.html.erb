@@ -1,1 +1,13 @@
 <!-- The main page of playlister -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Site Generator!</title>
+  </head>
+  <body>
+    <h1>Our Pages</h1>
+    <a href="/artists">Artists - <%= Artist.all.count %></a>
+    <a href="/songs">Songs - <%= Song.all.count %></a>
+    <a href="/genres">Genres - <%=Genre.all.count%></a>
+  </body>
+</html>
